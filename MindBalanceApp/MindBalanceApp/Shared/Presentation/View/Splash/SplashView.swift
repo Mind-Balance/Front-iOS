@@ -2,7 +2,7 @@
 //  SplashView.swift
 //  MindBalanceApp
 //
-//  Created by Natalia Camero on 15/4/24.
+//  Created by Manuel Cazalla on 15/4/24.
 //
 
 import SwiftUI
