@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C28344A2BCD9A47001A7A46 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2834492BCD9A47001A7A46 /* StatusModel.swift */; };
 		E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */; };
 		E1E36C322BCC964300537A32 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C312BCC964300537A32 /* Persistence.swift */; };
 		E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C332BCC964300537A32 /* MindBalanceApp.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2834492BCD9A47001A7A46 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		E1E36C2C2BCC964300537A32 /* MindBalanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindBalanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindBalanceAppApp.swift; sourceTree = "<group>"; };
 		E1E36C312BCC964300537A32 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -78,6 +80,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2834452BCD98CB001A7A46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C2834462BCD990F001A7A46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C2834492BCD9A47001A7A46 /* StatusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C2834472BCD9967001A7A46 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3C2834482BCD9984001A7A46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E1E36C232BCC964300537A32 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +190,7 @@
 		E1E36C612BCC96A800537A32 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834452BCD98CB001A7A46 /* ViewModel */,
 				E1E36C642BCC970500537A32 /* View */,
 			);
 			path = Presentation;
@@ -167,6 +199,7 @@
 		E1E36C622BCC96BA00537A32 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834462BCD990F001A7A46 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -174,6 +207,8 @@
 		E1E36C632BCC96CC00537A32 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834482BCD9984001A7A46 /* Services */,
+				3C2834472BCD9967001A7A46 /* Local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -327,6 +362,7 @@
 				E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */,
 				E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */,
 				E1E36C672BCC976F00537A32 /* SplashView.swift in Sources */,
+				3C28344A2BCD9A47001A7A46 /* StatusModel.swift in Sources */,
 				E1E36C372BCC964300537A32 /* ContentView.swift in Sources */,
 				E1E36C322BCC964300537A32 /* Persistence.swift in Sources */,
 			);
