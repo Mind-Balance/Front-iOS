@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum Status {
+    case none
+    case loaded
+    case loading
+    case error(error: String)
+}

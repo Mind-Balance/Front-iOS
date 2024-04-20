@@ -12,27 +12,23 @@ struct SplashView: View {
     
     var body: some View {
         ZStack {
-            let gradientColors: [Color] = [
-                Color(red: 21/255, green: 50/255, blue: 101/255), // Azul dark
-                Color(red: 89/255, green: 150/255, blue: 176/255) // Azul light
-            ]
             
-            LinearGradient(gradient: Gradient(colors: gradientColors), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [Color(red: 150/255, green: 202/255, blue: 209/255),Color(red: 21/255, green: 72/255, blue: 101/255)]), startPoint: .top, endPoint: .bottom)
+            
             
             Image("Logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .scaleEffect(pulse ? 1.1 : 1.0) // Cambia el tamaño del logo en la animación
+                .scaleEffect(pulse ? 1.3 : 1.0)
                 .onAppear {
                     withAnimation(Animation.easeInOut(duration: 0.5).repeatForever(autoreverses: true)) {
                         self.pulse.toggle()
+                    }
                 }
-            }
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
-
 #Preview {
     SplashView()
 }
