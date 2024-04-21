@@ -1,33 +1,32 @@
 //
-//  PasswordRecoveryView.swift
+//  NewPasswordView.swift
 //  MindBalanceApp
 //
-//  Created by Manuel Cazalla Colmenero on 20/4/24.
+//  Created by Manuel Cazalla Colmenero on 21/4/24.
 //
 
 import SwiftUI
 
-struct PasswordRecoveryView: View {
-    @State private var email = ""
-    @State private var dni = ""
-    
+struct NewPasswordView: View {
+    @State private var password = ""
+   
     var body: some View {
-        
+       
         ZStack {
             LinearGradient(gradient: Gradient(colors: [
                 Color(red: 150/255, green: 202/255, blue: 209/255),
                 Color(red: 21/255, green: 72/255, blue: 101/255)
             ]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.all)
-            
+          
             VStack(spacing: 20) {
-                Text("¿Has olvidado tu contraseña?")
+               Text("Nueva Contraseña")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
                     .id("1")
                 
-                Text("Por favor, introduce el email asociado a tu cuenta y tu DNI")
+                Text("Bienvenido/a ¡Cambiemos tu contraseña!Por favor, introduce una nueva contraseña y repítela para confirmarla")
                     .font(.body)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
@@ -35,7 +34,7 @@ struct PasswordRecoveryView: View {
                     .padding(.horizontal)
                     .id("2")
                 
-                TextField("Email", text: $email)
+                SecureField("Contraseña", text: $password)
                     .padding()
                     .background(Color(red: 89/255, green: 196/255, blue: 176/255))
                     .frame(width: 350, height: 40)
@@ -44,7 +43,7 @@ struct PasswordRecoveryView: View {
                     .padding(.horizontal)
                     .id("3")
                 
-                TextField("DNI", text: $dni)
+                SecureField("Contraseña", text: $password)
                     .padding()
                     .background(Color(red: 89/255, green: 196/255, blue: 176/255))
                     .frame(width: 350, height: 40)
@@ -56,7 +55,7 @@ struct PasswordRecoveryView: View {
                 Button(action: {
                     // Lógica de recuperación de contraseña
                 }) {
-                    Text("Confirmar identidad")
+                    Text("Crear nueva contraseña")
                         .font(.headline)
                         .foregroundColor(.black)
                         .frame(width: 350, height: 40)
@@ -65,6 +64,7 @@ struct PasswordRecoveryView: View {
                         .padding()
                         .id("5")
                 }
+                
                 Spacer()
             }
             .padding()
@@ -74,5 +74,5 @@ struct PasswordRecoveryView: View {
 }
 
 #Preview {
-    PasswordRecoveryView()
+    NewPasswordView()
 }

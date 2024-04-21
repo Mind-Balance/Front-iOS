@@ -21,17 +21,22 @@ struct LoginView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(.top, 50)
+                    .id("1")
                 
                 VStack(spacing: 10) {
                     Text("¡Hola! Qué gusto verte por aquí")
                         .font(.title2)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .id("2")
                     
                     Text("Shhh... No se lo digas a tu jefe, pero aquí se viene a desconectar")
-                        .font(.callout)
+                        .font(.body)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
+                        .id("3")
                     
                     Spacer()
                     
@@ -42,6 +47,7 @@ struct LoginView: View {
                         .cornerRadius(5.0)
                         .foregroundColor(Color.white)
                         .padding(.horizontal)
+                        .id("4")
                     
                     
                     SecureField("Password", text: $password)
@@ -51,6 +57,7 @@ struct LoginView: View {
                         .cornerRadius(5.0)
                         .foregroundColor(.white)
                         .padding(.horizontal)
+                        .id("5")
                     
                     Spacer()
                     Button(action: {
@@ -64,34 +71,38 @@ struct LoginView: View {
                             .cornerRadius(5.0)
                             .padding()
                             .frame(width: 300, height: 50)
+                            .id("6")
                     }
-                   
+                    
                     HStack {
                         Button(action: {
                             rememberMe.toggle()
                         }) {
                             Image(systemName: rememberMe ? "checkmark.square" : "square")
                                 .foregroundColor(.white)
-                                
+                                .id("7")
+                            
                         }
                         Text("Recuérdame")
                             .foregroundColor(.white)
-                            .font(.callout)
+                            .font(.body)
+                            .fontWeight(.bold)
                         
                         Spacer()
-                          
+                        
                         NavigationLink(destination: PasswordRecoveryView()) {
                             Text("¿Olvidé mi contraseña?")
                                 .foregroundColor(.white)
-                                .font(.callout)
+                                .font(.body)
+                                .fontWeight(.bold)
                         }
                     }
                     .padding(.horizontal,30)
                 }
                 Spacer()
-                .padding()
+                    .padding()
             }
-           
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
