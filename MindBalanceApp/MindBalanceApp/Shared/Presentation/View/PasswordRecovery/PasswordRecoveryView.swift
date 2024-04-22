@@ -57,7 +57,8 @@ struct PasswordRecoveryView: View {
                     // Lógica de recuperación de contraseña
                 }) {
                     Text("Confirmar identidad")
-                        .font(.headline)
+                        .font(.body)
+                        .fontWeight(.bold)
                         .foregroundColor(.black)
                         .frame(width: 350, height: 40)
                         .background(Color(red: 210/255, green: 232/255, blue: 209/255))

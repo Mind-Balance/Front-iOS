@@ -38,9 +38,7 @@ struct LoginView: View {
                         .padding(.horizontal)
                         .id("3")
                     
-                    Spacer()
-                    
-                    TextField("Username", text: $username)
+                   TextField("Username", text: $username)
                         .padding()
                         .background(Color(red: 89/255, green: 196/255, blue: 176/255))
                         .frame(width: 350, height: 40)
@@ -48,7 +46,6 @@ struct LoginView: View {
                         .foregroundColor(Color.white)
                         .padding(.horizontal)
                         .id("4")
-                    
                     
                     SecureField("Password", text: $password)
                         .padding()
@@ -59,12 +56,12 @@ struct LoginView: View {
                         .padding(.horizontal)
                         .id("5")
                     
-                    Spacer()
-                    Button(action: {
-                        // Lógica de inicio de sesión
+                   Button(action: {
+                        // TODO: Lógica de inicio de sesión
                     }) {
                         Text("Iniciar sesión")
-                            .font(.headline)
+                            .font(.body)
+                            .fontWeight(.bold)
                             .foregroundStyle(.black)
                             .frame(width: 350, height: 40)
                             .background(Color(red: 210/255, green: 232/255, blue: 209/255))
@@ -79,7 +76,7 @@ struct LoginView: View {
                             rememberMe.toggle()
                         }) {
                             Image(systemName: rememberMe ? "checkmark.square" : "square")
-                                .foregroundColor(.white)
+                            .foregroundColor(.white)
                                 .id("7")
                             
                         }
@@ -87,6 +84,7 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .font(.body)
                             .fontWeight(.bold)
+                            .id("8")
                         
                         Spacer()
                         
@@ -95,6 +93,7 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                                 .font(.body)
                                 .fontWeight(.bold)
+                                .id("9")
                         }
                     }
                     .padding(.horizontal,30)
