@@ -13,6 +13,8 @@
 		3C52C4A22BD3BA3400766CF0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C4A12BD3BA3400766CF0 /* RootViewModel.swift */; };
 		3C52C4A52BD3BA6B00766CF0 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C4A42BD3BA6B00766CF0 /* ErrorView.swift */; };
 		3C52C4A82BD3BAA900766CF0 /* PasswordRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */; };
+		3CA707472BD57BA200F6088E /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA707462BD57BA200F6088E /* NewPasswordView.swift */; };
+		3CA7074A2BD5830900F6088E /* SuccesPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA707492BD5830900F6088E /* SuccesPasswordView.swift */; };
 		E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */; };
 		E1E36C322BCC964300537A32 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C312BCC964300537A32 /* Persistence.swift */; };
 		E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C332BCC964300537A32 /* MindBalanceApp.xcdatamodeld */; };
@@ -49,6 +51,8 @@
 		3C52C4A12BD3BA3400766CF0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		3C52C4A42BD3BA6B00766CF0 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryView.swift; sourceTree = "<group>"; };
+		3CA707462BD57BA200F6088E /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		3CA707492BD5830900F6088E /* SuccesPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesPasswordView.swift; sourceTree = "<group>"; };
 		E1E36C2C2BCC964300537A32 /* MindBalanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindBalanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindBalanceAppApp.swift; sourceTree = "<group>"; };
 		E1E36C312BCC964300537A32 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -150,6 +154,22 @@
 				3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */,
 			);
 			path = PasswordRecovery;
+			sourceTree = "<group>";
+		};
+		3CA707452BD57B6F00F6088E /* NewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3CA707462BD57BA200F6088E /* NewPasswordView.swift */,
+			);
+			path = NewPassword;
+			sourceTree = "<group>";
+		};
+		3CA707482BD582E200F6088E /* SuccesPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3CA707492BD5830900F6088E /* SuccesPasswordView.swift */,
+			);
+			path = SuccesPassword;
 			sourceTree = "<group>";
 		};
 		E1E36C232BCC964300537A32 = {
@@ -259,6 +279,8 @@
 		E1E36C642BCC970500537A32 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CA707482BD582E200F6088E /* SuccesPassword */,
+				3CA707452BD57B6F00F6088E /* NewPassword */,
 				3C52C4A62BD3BA8A00766CF0 /* PasswordRecovery */,
 				3C52C4A32BD3BA4C00766CF0 /* ErrorView */,
 				3C52C49E2BD3B9D300766CF0 /* RootView */,
@@ -406,11 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA707472BD57BA200F6088E /* NewPasswordView.swift in Sources */,
 				3C52C4A02BD3B9FE00766CF0 /* RootView.swift in Sources */,
 				E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */,
 				3C52C49C2BD3B99200766CF0 /* LoginView.swift in Sources */,
 				E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */,
 				E1E36C672BCC976F00537A32 /* SplashView.swift in Sources */,
+				3CA7074A2BD5830900F6088E /* SuccesPasswordView.swift in Sources */,
 				3C52C4A52BD3BA6B00766CF0 /* ErrorView.swift in Sources */,
 				3C28344A2BCD9A47001A7A46 /* StatusModel.swift in Sources */,
 				E1E36C372BCC964300537A32 /* ContentView.swift in Sources */,

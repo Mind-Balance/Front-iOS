@@ -21,28 +21,31 @@ struct LoginView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(.top, 50)
+                    .id("1")
                 
                 VStack(spacing: 10) {
                     Text("¡Hola! Qué gusto verte por aquí")
                         .font(.title2)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .id("2")
                     
                     Text("Shhh... No se lo digas a tu jefe, pero aquí se viene a desconectar")
-                        .font(.callout)
+                        .font(.body)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
+                        .id("3")
                     
-                    Spacer()
-                    
-                    TextField("Username", text: $username)
+                   TextField("Username", text: $username)
                         .padding()
                         .background(Color(red: 89/255, green: 196/255, blue: 176/255))
                         .frame(width: 350, height: 40)
                         .cornerRadius(5.0)
                         .foregroundColor(Color.white)
                         .padding(.horizontal)
-                    
+                        .id("4")
                     
                     SecureField("Password", text: $password)
                         .padding()
@@ -51,47 +54,54 @@ struct LoginView: View {
                         .cornerRadius(5.0)
                         .foregroundColor(.white)
                         .padding(.horizontal)
+                        .id("5")
                     
-                    Spacer()
-                    Button(action: {
-                        // Lógica de inicio de sesión
+                   Button(action: {
+                        // TODO: Lógica de inicio de sesión
                     }) {
                         Text("Iniciar sesión")
-                            .font(.headline)
+                            .font(.body)
+                            .fontWeight(.bold)
                             .foregroundStyle(.black)
                             .frame(width: 350, height: 40)
                             .background(Color(red: 210/255, green: 232/255, blue: 209/255))
                             .cornerRadius(5.0)
                             .padding()
                             .frame(width: 300, height: 50)
+                            .id("6")
                     }
-                   
+                    
                     HStack {
                         Button(action: {
                             rememberMe.toggle()
                         }) {
                             Image(systemName: rememberMe ? "checkmark.square" : "square")
-                                .foregroundColor(.white)
-                                
+                            .foregroundColor(.white)
+                                .id("7")
+                            
                         }
                         Text("Recuérdame")
                             .foregroundColor(.white)
-                            .font(.callout)
+                            .font(.body)
+                            .fontWeight(.bold)
+                            .id("8")
                         
                         Spacer()
-                          
+                        
                         NavigationLink(destination: PasswordRecoveryView()) {
                             Text("¿Olvidé mi contraseña?")
                                 .foregroundColor(.white)
-                                .font(.callout)
+                                .font(.body)
+                                .fontWeight(.bold)
+                                .id("9")
                         }
                     }
                     .padding(.horizontal,30)
                 }
                 Spacer()
-                .padding()
+                    .padding()
             }
-           
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
