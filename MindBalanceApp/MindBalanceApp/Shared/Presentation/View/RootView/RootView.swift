@@ -23,7 +23,7 @@ struct RootView: View {
                     }
             case .loading:
                 withAnimation {
-                  SplashView()
+                  NewPasswordView()
                 }
                 
             case .error(error: let errorString):

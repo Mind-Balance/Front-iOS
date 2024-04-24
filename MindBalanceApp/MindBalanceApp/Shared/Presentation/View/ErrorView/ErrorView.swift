@@ -2,7 +2,7 @@
 //  ErrorView.swift
 //  MindBalanceApp
 //
-//  Created by Manuel Cazalla Colmenero on 20/4/24.
+//  Created by Manuel Cazalla Colmenero on 24/4/24.
 //
 
 import SwiftUI

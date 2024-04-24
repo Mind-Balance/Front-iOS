@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username = ""
+    @State private var email = ""
     @State private var password = ""
     @State private var rememberMe = false
+    
+     var signInViewModel = SignInViewModel()
+    
+    let baseNtework = BaseNetwork()
     
     var body: some View {
         ZStack {
@@ -38,7 +42,7 @@ struct LoginView: View {
                         .padding(.horizontal)
                         .id(3)
                     
-                   TextField("Username", text: $username)
+                    TextField("Username", text: $email)
                         .padding()
                         .background(Color.textFieldColor())
                         .frame(width: 350, height: 40)
@@ -56,8 +60,9 @@ struct LoginView: View {
                         .padding(.horizontal)
                         .id(5)
                     
-                   Button(action: {
-                        // TODO: Lógica de inicio de sesión
+                    Button(action:  {
+                        signInViewModel.login(email: email, password: password )
+                        
                     }) {
                         Text("Iniciar sesión")
                             .font(.body)
@@ -76,7 +81,7 @@ struct LoginView: View {
                             rememberMe.toggle()
                         }) {
                             Image(systemName: rememberMe ? "checkmark.square" : "square")
-                            .foregroundColor(.white)
+                                .foregroundColor(.white)
                                 .id(7)
                             
                         }
