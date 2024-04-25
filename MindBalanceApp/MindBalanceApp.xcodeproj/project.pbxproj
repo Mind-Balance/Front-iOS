@@ -23,7 +23,6 @@
 		3CD25B172BD90A7D006457C6 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B162BD90A7D006457C6 /* BaseNetwork.swift */; };
 		3CD25B192BD90C7C006457C6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B182BD90C7C006457C6 /* SignInViewModel.swift */; };
 		3CD25B1B2BD912A5006457C6 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B1A2BD912A5006457C6 /* Keychain.swift */; };
-		3CD25B1E2BD912D0006457C6 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3CD25B1D2BD912D0006457C6 /* KeychainSwift */; };
 		3CD25B202BD96FB0006457C6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B1F2BD96FB0006457C6 /* ErrorView.swift */; };
 		E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */; };
 		E1E36C322BCC964300537A32 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C312BCC964300537A32 /* Persistence.swift */; };
@@ -35,6 +34,7 @@
 		E1E36C512BCC964500537A32 /* MindBalanceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C502BCC964500537A32 /* MindBalanceAppUITests.swift */; };
 		E1E36C532BCC964500537A32 /* MindBalanceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C522BCC964500537A32 /* MindBalanceAppUITestsLaunchTests.swift */; };
 		E1E36C672BCC976F00537A32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C662BCC976F00537A32 /* SplashView.swift */; };
+		E1FA2EE92BDA592E00E1B3B5 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD25B1E2BD912D0006457C6 /* KeychainSwift in Frameworks */,
+				E1FA2EE92BDA592E00E1B3B5 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +375,7 @@
 			);
 			name = MindBalanceApp;
 			packageProductDependencies = (
-				3CD25B1D2BD912D0006457C6 /* KeychainSwift */,
+				E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */,
 			);
 			productName = MindBalanceApp;
 			productReference = E1E36C2C2BCC964300537A32 /* MindBalanceApp.app */;
@@ -454,7 +454,7 @@
 			mainGroup = E1E36C232BCC964300537A32;
 			packageReferences = (
 				3C983CBB2BD86B92001242F5 /* XCRemoteSwiftPackageReference "ViewInspector" */,
-				3CD25B1C2BD912D0006457C6 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = E1E36C2D2BCC964300537A32 /* Products */;
 			projectDirPath = "";
@@ -877,9 +877,9 @@
 				minimumVersion = 0.9.10;
 			};
 		};
-		3CD25B1C2BD912D0006457C6 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 22.0.0;
@@ -893,9 +893,9 @@
 			package = 3C983CBB2BD86B92001242F5 /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
 		};
-		3CD25B1D2BD912D0006457C6 /* KeychainSwift */ = {
+		E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3CD25B1C2BD912D0006457C6 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
