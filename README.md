@@ -4,7 +4,7 @@
   <img src="https://github.com/Mind-Balance/Vapor-Backend/blob/main/assets/mindBalanceLogo.png" alt="Logo MindBalance" width="550" height="350">
 </div>
 
-s
+
 * [✍🏼 Autores/as](#autorxs)
 * [©️ Licencia](#licencia)
 
