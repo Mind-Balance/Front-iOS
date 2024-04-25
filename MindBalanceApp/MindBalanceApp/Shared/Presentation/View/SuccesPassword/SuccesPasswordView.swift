@@ -39,13 +39,13 @@ struct SuccesPasswordView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .id(3)
-    
+                
                 NavigationLink(destination: LoginView()) {
                     Text("Continuar")
                         .font(.body)
                         .fontWeight(.bold)
                         .foregroundStyle(.black)
-                        .frame(width: 350, height: 40)
+                        .frame(width: 350, height: 50)
                         .background(Color.buttonColor())
                         .cornerRadius(5.0)
                         .padding()
@@ -53,22 +53,6 @@ struct SuccesPasswordView: View {
                         .id(6)
                 }
                 Spacer()
-                
-                /*
-                Button(action: {
-                    //TODO: Navegación a home
-                }) {
-                    Text("Continuar")
-                        .font(.body)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .frame(width: 300, height: 40)
-                        .background(Color.buttonColor())
-                        .cornerRadius(5.0)
-                        .padding()
-                        .id(4)
-                }*/
-                
                 Spacer()
             }
         }

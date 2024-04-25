@@ -36,39 +36,39 @@ struct PasswordRecoveryView: View {
                     
                 }
                 .padding(.leading, 1)
-
-                HStack {
-                       Image(systemName: "person")
-                          .foregroundColor(.white)
-                          .padding(.leading, 15)
-                       TextField("Email", text: $email)
-                            .padding(.vertical)
-                            .id(3)
-                      }
-                      .background(Color.textFieldColor())
-                      .frame(width: 350, height: 40)
-                      .cornerRadius(5.0)
-                      .foregroundColor(Color.white)
-                      .padding(.leading, 15)
-                      .padding(.bottom, 10)
-                
-                
                 
                 HStack {
-                       Image(systemName: "person.text.rectangle")
-                          .foregroundColor(.white)
-                          .padding(.leading, 15)
-                       TextField("DNI", text: $dni)
-                            .padding(.vertical)
-                            .id(4)
-                      }
-                      .background(Color.textFieldColor())
-                      .frame(width: 350, height: 40)
-                      .cornerRadius(5.0)
-                      .foregroundColor(Color.white)
-                      .padding(.leading, 15)
+                    Image(systemName: "person")
+                        .foregroundColor(.white)
+                        .padding(.leading, 15)
+                    TextField("Email", text: $email)
+                        .padding(.vertical)
+                        .id(3)
+                }
+                .background(Color.textFieldColor())
+                .frame(width: 350, height: 40)
+                .cornerRadius(5.0)
+                .foregroundColor(Color.white)
+                .padding(.leading, 15)
+                .padding(.bottom, 10)
                 
-
+                
+                
+                HStack {
+                    Image(systemName: "person.text.rectangle")
+                        .foregroundColor(.white)
+                        .padding(.leading, 15)
+                    TextField("DNI", text: $dni)
+                        .padding(.vertical)
+                        .id(4)
+                }
+                .background(Color.textFieldColor())
+                .frame(width: 350, height: 40)
+                .cornerRadius(5.0)
+                .foregroundColor(Color.white)
+                .padding(.leading, 15)
+                
+                
                 
                 NavigationLink(destination: SuccesPasswordView()) {
                     Text("Crear nueva contraseña")
@@ -79,26 +79,9 @@ struct PasswordRecoveryView: View {
                         .background(Color.buttonColor())
                         .cornerRadius(5.0)
                         .padding()
-                        
-                        .id(6)
-                }
-               
-                
-                
-                
-               /* Button(action: {
-                    // Lógica de recuperación de contraseña
-                }) {
-                    Text("Confirmar identidad")
-                        .font(.body)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .frame(width: 350, height: 40)
-                        .background(Color.buttonColor())
-                        .cornerRadius(5.0)
-                        .padding()
+                    
                         .id(5)
-                }*/
+                }
                 Spacer()
             }
             .padding()
