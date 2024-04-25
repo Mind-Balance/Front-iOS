@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C16E3D42BD7FBB700E0A00B /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C16E3D32BD7FBB700E0A00B /* Extension+Color.swift */; };
+		3C28344A2BCD9A47001A7A46 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2834492BCD9A47001A7A46 /* StatusModel.swift */; };
+		3C52C49C2BD3B99200766CF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C49B2BD3B99200766CF0 /* LoginView.swift */; };
+		3C52C4A02BD3B9FE00766CF0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C49F2BD3B9FE00766CF0 /* RootView.swift */; };
+		3C52C4A22BD3BA3400766CF0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C4A12BD3BA3400766CF0 /* RootViewModel.swift */; };
+		3C52C4A82BD3BAA900766CF0 /* PasswordRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */; };
+		3C91BA532BD9B9A6007642B8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91BA522BD9B9A6007642B8 /* ViewModel.swift */; };
+		3C91BA562BD9CAB0007642B8 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91BA552BD9CAB0007642B8 /* keychain.swift */; };
+		3C983CB92BD86757001242F5 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C983CB82BD86757001242F5 /* TestView.swift */; };
+		3C983CBD2BD86B92001242F5 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 3C983CBC2BD86B92001242F5 /* ViewInspector */; };
+		3CA707472BD57BA200F6088E /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA707462BD57BA200F6088E /* NewPasswordView.swift */; };
+		3CA7074A2BD5830900F6088E /* SuccesPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA707492BD5830900F6088E /* SuccesPasswordView.swift */; };
+		3CD25B152BD909F0006457C6 /* SingInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B142BD909EF006457C6 /* SingInResponse.swift */; };
+		3CD25B172BD90A7D006457C6 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B162BD90A7D006457C6 /* BaseNetwork.swift */; };
+		3CD25B192BD90C7C006457C6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B182BD90C7C006457C6 /* SignInViewModel.swift */; };
+		3CD25B1B2BD912A5006457C6 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B1A2BD912A5006457C6 /* Keychain.swift */; };
+		3CD25B202BD96FB0006457C6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD25B1F2BD96FB0006457C6 /* ErrorView.swift */; };
 		E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */; };
 		E1E36C322BCC964300537A32 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C312BCC964300537A32 /* Persistence.swift */; };
 		E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C332BCC964300537A32 /* MindBalanceApp.xcdatamodeld */; };
@@ -17,6 +34,7 @@
 		E1E36C512BCC964500537A32 /* MindBalanceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C502BCC964500537A32 /* MindBalanceAppUITests.swift */; };
 		E1E36C532BCC964500537A32 /* MindBalanceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C522BCC964500537A32 /* MindBalanceAppUITestsLaunchTests.swift */; };
 		E1E36C672BCC976F00537A32 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36C662BCC976F00537A32 /* SplashView.swift */; };
+		E1FA2EE92BDA592E00E1B3B5 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C16E3D32BD7FBB700E0A00B /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		3C2834492BCD9A47001A7A46 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		3C52C49B2BD3B99200766CF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3C52C49F2BD3B9FE00766CF0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		3C52C4A12BD3BA3400766CF0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryView.swift; sourceTree = "<group>"; };
+		3C91BA522BD9B9A6007642B8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3C91BA552BD9CAB0007642B8 /* keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychain.swift; sourceTree = "<group>"; };
+		3C983CB82BD86757001242F5 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3CA707462BD57BA200F6088E /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		3CA707492BD5830900F6088E /* SuccesPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesPasswordView.swift; sourceTree = "<group>"; };
+		3CD25B142BD909EF006457C6 /* SingInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInResponse.swift; sourceTree = "<group>"; };
+		3CD25B162BD90A7D006457C6 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		3CD25B182BD90C7C006457C6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		3CD25B1A2BD912A5006457C6 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		3CD25B1F2BD96FB0006457C6 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E1E36C2C2BCC964300537A32 /* MindBalanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindBalanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E36C2F2BCC964300537A32 /* MindBalanceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindBalanceAppApp.swift; sourceTree = "<group>"; };
 		E1E36C312BCC964300537A32 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FA2EE92BDA592E00E1B3B5 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C983CBD2BD86B92001242F5 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +114,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C16E3D22BD7FB4C00E0A00B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C16E3D32BD7FBB700E0A00B /* Extension+Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3C2834452BCD98CB001A7A46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C52C4A12BD3BA3400766CF0 /* RootViewModel.swift */,
+				3CD25B182BD90C7C006457C6 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C2834462BCD990F001A7A46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C2834492BCD9A47001A7A46 /* StatusModel.swift */,
+				3CD25B142BD909EF006457C6 /* SingInResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C2834472BCD9967001A7A46 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3CD25B1A2BD912A5006457C6 /* Keychain.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3C2834482BCD9984001A7A46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3CD25B162BD90A7D006457C6 /* BaseNetwork.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C52C49A2BD3B97700766CF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C52C49B2BD3B99200766CF0 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3C52C49E2BD3B9D300766CF0 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				3C52C49F2BD3B9FE00766CF0 /* RootView.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		3C52C4A32BD3BA4C00766CF0 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				3CD25B1F2BD96FB0006457C6 /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		3C52C4A62BD3BA8A00766CF0 /* PasswordRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				3C52C4A72BD3BAA900766CF0 /* PasswordRecoveryView.swift */,
+			);
+			path = PasswordRecovery;
+			sourceTree = "<group>";
+		};
+		3C91BA4C2BD9B305007642B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C91BA522BD9B9A6007642B8 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C91BA542BD9CA94007642B8 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				3C91BA552BD9CAB0007642B8 /* keychain.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		3C983CB72BD86724001242F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C983CB82BD86757001242F5 /* TestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CA707452BD57B6F00F6088E /* NewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3CA707462BD57BA200F6088E /* NewPasswordView.swift */,
+			);
+			path = NewPassword;
+			sourceTree = "<group>";
+		};
+		3CA707482BD582E200F6088E /* SuccesPassword */ = {
+			isa = PBXGroup;
+			children = (
+				3CA707492BD5830900F6088E /* SuccesPasswordView.swift */,
+			);
+			path = SuccesPassword;
+			sourceTree = "<group>";
+		};
 		E1E36C232BCC964300537A32 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +273,9 @@
 		E1E36C452BCC964500537A32 /* MindBalanceAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				3C91BA542BD9CA94007642B8 /* Keychain */,
+				3C91BA4C2BD9B305007642B8 /* ViewModel */,
+				3C983CB72BD86724001242F5 /* View */,
 				E1E36C462BCC964500537A32 /* MindBalanceAppTests.swift */,
 			);
 			path = MindBalanceAppTests;
@@ -149,6 +302,7 @@
 		E1E36C602BCC96A100537A32 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3C16E3D22BD7FB4C00E0A00B /* Extension */,
 				E1E36C612BCC96A800537A32 /* Presentation */,
 				E1E36C632BCC96CC00537A32 /* Data */,
 				E1E36C622BCC96BA00537A32 /* Domain */,
@@ -159,6 +313,7 @@
 		E1E36C612BCC96A800537A32 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834452BCD98CB001A7A46 /* ViewModel */,
 				E1E36C642BCC970500537A32 /* View */,
 			);
 			path = Presentation;
@@ -167,6 +322,7 @@
 		E1E36C622BCC96BA00537A32 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834462BCD990F001A7A46 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -174,6 +330,8 @@
 		E1E36C632BCC96CC00537A32 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3C2834482BCD9984001A7A46 /* Services */,
+				3C2834472BCD9967001A7A46 /* Local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -181,6 +339,12 @@
 		E1E36C642BCC970500537A32 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CA707482BD582E200F6088E /* SuccesPassword */,
+				3CA707452BD57B6F00F6088E /* NewPassword */,
+				3C52C4A62BD3BA8A00766CF0 /* PasswordRecovery */,
+				3C52C4A32BD3BA4C00766CF0 /* ErrorView */,
+				3C52C49E2BD3B9D300766CF0 /* RootView */,
+				3C52C49A2BD3B97700766CF0 /* Login */,
 				E1E36C652BCC973C00537A32 /* Splash */,
 			);
 			path = View;
@@ -210,6 +374,9 @@
 			dependencies = (
 			);
 			name = MindBalanceApp;
+			packageProductDependencies = (
+				E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */,
+			);
 			productName = MindBalanceApp;
 			productReference = E1E36C2C2BCC964300537A32 /* MindBalanceApp.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +395,9 @@
 				E1E36C442BCC964500537A32 /* PBXTargetDependency */,
 			);
 			name = MindBalanceAppTests;
+			packageProductDependencies = (
+				3C983CBC2BD86B92001242F5 /* ViewInspector */,
+			);
 			productName = MindBalanceAppTests;
 			productReference = E1E36C422BCC964500537A32 /* MindBalanceAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -282,6 +452,10 @@
 				Base,
 			);
 			mainGroup = E1E36C232BCC964300537A32;
+			packageReferences = (
+				3C983CBB2BD86B92001242F5 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = E1E36C2D2BCC964300537A32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,10 +498,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA707472BD57BA200F6088E /* NewPasswordView.swift in Sources */,
+				3CD25B172BD90A7D006457C6 /* BaseNetwork.swift in Sources */,
+				3C52C4A02BD3B9FE00766CF0 /* RootView.swift in Sources */,
 				E1E36C352BCC964300537A32 /* MindBalanceApp.xcdatamodeld in Sources */,
+				3C52C49C2BD3B99200766CF0 /* LoginView.swift in Sources */,
+				3CD25B1B2BD912A5006457C6 /* Keychain.swift in Sources */,
 				E1E36C302BCC964300537A32 /* MindBalanceAppApp.swift in Sources */,
+				3CD25B202BD96FB0006457C6 /* ErrorView.swift in Sources */,
 				E1E36C672BCC976F00537A32 /* SplashView.swift in Sources */,
+				3CA7074A2BD5830900F6088E /* SuccesPasswordView.swift in Sources */,
+				3C28344A2BCD9A47001A7A46 /* StatusModel.swift in Sources */,
+				3CD25B192BD90C7C006457C6 /* SignInViewModel.swift in Sources */,
+				3C16E3D42BD7FBB700E0A00B /* Extension+Color.swift in Sources */,
 				E1E36C372BCC964300537A32 /* ContentView.swift in Sources */,
+				3C52C4A22BD3BA3400766CF0 /* RootViewModel.swift in Sources */,
+				3CD25B152BD909F0006457C6 /* SingInResponse.swift in Sources */,
+				3C52C4A82BD3BAA900766CF0 /* PasswordRecoveryView.swift in Sources */,
 				E1E36C322BCC964300537A32 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +523,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C983CB92BD86757001242F5 /* TestView.swift in Sources */,
+				3C91BA562BD9CAB0007642B8 /* keychain.swift in Sources */,
+				3C91BA532BD9B9A6007642B8 /* ViewModel.swift in Sources */,
 				E1E36C472BCC964500537A32 /* MindBalanceAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +867,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C983CBB2BD86B92001242F5 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
+		E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 22.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C983CBC2BD86B92001242F5 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C983CBB2BD86B92001242F5 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		E1FA2EE82BDA592E00E1B3B5 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1FA2EE72BDA592E00E1B3B5 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E1E36C332BCC964300537A32 /* MindBalanceApp.xcdatamodeld */ = {
