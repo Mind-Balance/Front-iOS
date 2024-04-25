@@ -1,25 +1,12 @@
 # Bootcamp Desarrollo de Apps Móviles - Proyecto final
 
 <div align="center">
-  <img src="assets/mindBalanceLogo.png" alt="Logo MindBalance" width="550" height="350">
+  <img src="https://github.com/Mind-Balance/Vapor-Backend/blob/main/assets/mindBalanceLogo.png" alt="Logo MindBalance" width="550" height="350">
 </div>
 
----
-
-<p align="center">
-  <strong><span style="font-size:20px;">Backend</span></strong>
-</p>
-
----
-
-## Índice
- 
-* [💧 Servidor en Vapor](#server)
+s
 * [✍🏼 Autores/as](#autorxs)
 * [©️ Licencia](#licencia)
-
-<a name="server"></a>
-## 💧 Servidor en Vapor
 
 <a name="autorxs"></a>
 ## ✍🏼 Autores/as
