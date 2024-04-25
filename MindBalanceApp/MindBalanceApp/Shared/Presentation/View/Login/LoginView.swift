@@ -36,34 +36,43 @@ struct LoginView: View {
                     
                     Text("Shhh... No se lo digas a tu jefe, pero aquí se viene a desconectar")
                         .font(.body)
-                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .frame(width: 300, height: 45)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                         .id(3)
                     
-                    TextField("Username", text: $email)
-                        .padding()
-                        .background(Color.textFieldColor())
-                        .frame(width: 350, height: 40)
-                        .cornerRadius(5.0)
-                        .foregroundColor(Color.white)
-                        .padding(.horizontal)
-                        .id(4)
+                    HStack {
+                        Image(systemName: "person")
+                            .foregroundColor(.white)
+                            .padding(.leading, 2)
+                        TextField("Username", text: $email)
+                            .padding(.vertical)
+                            .id(4)
+                    }
+                    .padding(.horizontal)
+                    .background(Color.textFieldColor())
+                    .frame(width: 350, height: 40)
+                    .cornerRadius(5.0)
+                    .foregroundColor(Color.white)
                     
-                    SecureField("Password", text: $password)
-                        .padding()
-                        .background(Color.textFieldColor())
-                        .frame(width: 350, height: 40)
-                        .cornerRadius(5.0)
-                        .foregroundColor(.white)
-                        .padding(.horizontal)
-                        .id(5)
+                    HStack {
+                        Image(systemName: "lock.shield.fill")
+                            .foregroundColor(.white)
+                            .padding(.leading, 2)
+                        SecureField("Password", text: $password)
+                            .padding(.vertical)
+                            .id(5)
+                    }
+                    .padding(.horizontal)
+                    .background(Color.textFieldColor())
+                    .frame(width: 350, height: 40)
+                    .cornerRadius(5.0)
+                    .foregroundColor(Color.white)
                     
-                    Button(action:  {
-                        signInViewModel.login(email: email, password: password )
-                        
-                    }) {
+                    
+                    //TODO: signInViewModel.login(email: email, password: password)
+                    NavigationLink(destination: NewPasswordView()) {
                         Text("Iniciar sesión")
                             .font(.body)
                             .fontWeight(.bold)
@@ -95,7 +104,7 @@ struct LoginView: View {
                         
                         NavigationLink(destination: PasswordRecoveryView()) {
                             Text("¿Olvidé mi contraseña?")
-                                .foregroundColor(.white)
+                                .foregroundColor(Color.textFieldColor())
                                 .font(.body)
                                 .fontWeight(.bold)
                                 .id(9)
@@ -108,10 +117,14 @@ struct LoginView: View {
             }
             
         }
+        .navigationBarBackButtonHidden(true)
         .edgesIgnoringSafeArea(.all)
+
     }
+    
 }
 
 #Preview {
     LoginView()
 }
+
