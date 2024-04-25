@@ -17,7 +17,7 @@ class SignInViewModel: ObservableObject {
     @Published var status = Status.none
     
     
-    private var suscriptors = Set<AnyCancellable>()
+     var suscriptors = Set<AnyCancellable>()
     
     func login(email:String , password: String){
         
@@ -30,7 +30,7 @@ class SignInViewModel: ObservableObject {
                       response.statusCode == 200 else {
                     throw URLError(.badServerResponse)
             }
-                //Todo OK. convierto Data -> Cadena usando codificacion utf8
+                
                 return String(decoding: $0.data, as: UTF8.self)
             }
             .receive(on: DispatchQueue.main)
@@ -38,9 +38,9 @@ class SignInViewModel: ObservableObject {
                 
                 switch completion{
                 case .failure:
-                    self.status = .error(error: "Usuario y/o clave erronea") //LogiN Error
+                    self.status = .error(error: "Usuario y/o clave erronea") 
                 case .finished:
-                    self.status = .loading
+                    self.status = .loaded
                 }
             } receiveValue: { token in
                 self.accessToken = token
