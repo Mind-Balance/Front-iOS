@@ -17,40 +17,76 @@ struct PasswordRecoveryView: View {
             LinearGradient.loginColor()
                 .ignoresSafeArea()
             
-            VStack(spacing: 20) {
-                Text("¿Has olvidado tu contraseña?")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    .id(1)
+            VStack(alignment: .leading ) {
+                VStack(alignment: .leading, spacing: 7) {
+                    Text("¿Has olvidado tu contraseña?")
+                        .padding(.top,60)
+                        .padding(.leading, 12)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .id(1)
+                    
+                    Text("Por favor, introduce el email asociado a tu cuenta y tu DNI")
+                        .padding(.horizontal)
+                        .font(.body)
+                        .foregroundColor(Color.white)
+                        .frame(width: 330, height: 50)
+                        .id(2)
+                    
+                }
+                .padding(.leading, 1)
+
+                HStack {
+                       Image(systemName: "person")
+                          .foregroundColor(.white)
+                          .padding(.leading, 15)
+                       TextField("Email", text: $email)
+                            .padding(.vertical)
+                            .id(3)
+                      }
+                      .background(Color.textFieldColor())
+                      .frame(width: 350, height: 40)
+                      .cornerRadius(5.0)
+                      .foregroundColor(Color.white)
+                      .padding(.leading, 15)
+                      .padding(.bottom, 10)
                 
-                Text("Por favor, introduce el email asociado a tu cuenta y tu DNI")
-                    .font(.body)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                    .id(2)
                 
-                TextField("Email", text: $email)
-                    .padding()
-                    .background(Color.textFieldColor())
-                    .frame(width: 350, height: 40)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(5.0)
-                    .padding(.horizontal)
-                    .id(3)
                 
-                TextField("DNI", text: $dni)
-                    .padding()
-                    .background(Color.textFieldColor())
-                    .frame(width: 350, height: 40)
-                    .cornerRadius(5.0)
-                    .foregroundColor(.white)
-                    .padding(.horizontal)
-                    .id(4)
+                HStack {
+                       Image(systemName: "person.text.rectangle")
+                          .foregroundColor(.white)
+                          .padding(.leading, 15)
+                       TextField("DNI", text: $dni)
+                            .padding(.vertical)
+                            .id(4)
+                      }
+                      .background(Color.textFieldColor())
+                      .frame(width: 350, height: 40)
+                      .cornerRadius(5.0)
+                      .foregroundColor(Color.white)
+                      .padding(.leading, 15)
                 
-                Button(action: {
+
+                
+                NavigationLink(destination: SuccesPasswordView()) {
+                    Text("Crear nueva contraseña")
+                        .font(.body)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                        .frame(width: 350, height: 50)
+                        .background(Color.buttonColor())
+                        .cornerRadius(5.0)
+                        .padding()
+                        
+                        .id(6)
+                }
+               
+                
+                
+                
+               /* Button(action: {
                     // Lógica de recuperación de contraseña
                 }) {
                     Text("Confirmar identidad")
@@ -62,7 +98,7 @@ struct PasswordRecoveryView: View {
                         .cornerRadius(5.0)
                         .padding()
                         .id(5)
-                }
+                }*/
                 Spacer()
             }
             .padding()

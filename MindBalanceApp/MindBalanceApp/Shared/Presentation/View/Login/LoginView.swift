@@ -32,44 +32,53 @@ struct LoginView: View {
                     
                     Text("Shhh... No se lo digas a tu jefe, pero aquí se viene a desconectar")
                         .font(.body)
-                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
+                        .frame(width: 300, height: 45)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                         .id(3)
                     
-                   TextField("Username", text: $username)
-                        .padding()
-                        .background(Color.textFieldColor())
-                        .frame(width: 350, height: 40)
-                        .cornerRadius(5.0)
-                        .foregroundColor(Color.white)
-                        .padding(.horizontal)
-                        .id(4)
+                    HStack {
+                           Image(systemName: "person")
+                              .foregroundColor(.white)
+                              .padding(.leading, 2)
+                            TextField("Username", text: $username)
+                                .padding(.vertical)
+                                .id(4)
+                          }
+                          .padding(.horizontal)
+                          .background(Color.textFieldColor())
+                          .frame(width: 350, height: 40)
+                          .cornerRadius(5.0)
+                          .foregroundColor(Color.white)
                     
-                    SecureField("Password", text: $password)
-                        .padding()
-                        .background(Color.textFieldColor())
-                        .frame(width: 350, height: 40)
-                        .cornerRadius(5.0)
-                        .foregroundColor(.white)
-                        .padding(.horizontal)
-                        .id(5)
+                    HStack {
+                           Image(systemName: "lock.shield.fill")
+                              .foregroundColor(.white)
+                              .padding(.leading, 2)
+                           SecureField("Password", text: $password)
+                                .padding(.vertical)
+                                .id(5)
+                          }
+                          .padding(.horizontal)
+                          .background(Color.textFieldColor())
+                          .frame(width: 350, height: 40)
+                          .cornerRadius(5.0)
+                          .foregroundColor(Color.white)
                     
-                   Button(action: {
-                        // TODO: Lógica de inicio de sesión
-                    }) {
+                    NavigationLink(destination: NewPasswordView()) {
                         Text("Iniciar sesión")
                             .font(.body)
                             .fontWeight(.bold)
                             .foregroundStyle(.black)
-                            .frame(width: 350, height: 40)
+                            .frame(width: 350, height: 50)
                             .background(Color.buttonColor())
                             .cornerRadius(5.0)
-                            .padding()
+                            .padding(.top,20)
                             .frame(width: 300, height: 50)
                             .id(6)
                     }
+                    
                     
                     HStack {
                         Button(action: {
@@ -77,7 +86,7 @@ struct LoginView: View {
                         }) {
                             Image(systemName: rememberMe ? "checkmark.square" : "square")
                             .foregroundColor(.white)
-                                .id(7)
+                            .id(7)
                             
                         }
                         Text("Recuérdame")
@@ -90,13 +99,14 @@ struct LoginView: View {
                         
                         NavigationLink(destination: PasswordRecoveryView()) {
                             Text("¿Olvidé mi contraseña?")
-                                .foregroundColor(.white)
+                                .foregroundColor(Color.textFieldColor())
                                 .font(.body)
                                 .fontWeight(.bold)
                                 .id(9)
                         }
                     }
                     .padding(.horizontal,30)
+                    .padding(.top, 12)
                 }
                 Spacer()
                     .padding()

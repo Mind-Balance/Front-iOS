@@ -49,6 +49,20 @@ struct NewPasswordView: View {
                     .padding(.horizontal)
                     .id(4)
                 
+                NavigationLink(destination: SuccesPasswordView()) {
+                    Text("Crear nueva contraseña")
+                        .font(.body)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.black)
+                        .frame(width: 350, height: 40)
+                        .background(Color.buttonColor())
+                        .cornerRadius(5.0)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .id(6)
+                }
+                
+                /*
                 Button(action: {
                     // Lógica de recuperación de contraseña
                 }) {
@@ -60,7 +74,7 @@ struct NewPasswordView: View {
                         .cornerRadius(5.0)
                         .padding()
                         .id(5)
-                }
+                }*/
                 
                 Spacer()
             }
